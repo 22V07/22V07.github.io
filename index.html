@@ -1,82 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Vanessa Bokove</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanessa Bokove | Portfolio</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Hi, I'm Vanessa Bokove 👋</h1>
-    <p>Third-Year Software Engineering Student</p>
-  </header>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Vanessa.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a third-year Software Engineering student at EPITECH Benin.
-      I am passionate about computer science and continuously improving my technical skills.
-      I have a strong interest in data analysis, software development, and data-driven insights.
-    </p>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <h1 class="fade-in">Hi, I'm Vanessa Bokove</h1>
+  <p class="fade-in delay">Third-Year Software Engineering Student</p>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Programming Languages:</strong> C, C++, Haskell, Assembler</li>
-      <li><strong>Frameworks & Tools:</strong> WordPress, Shopify, SFML, SDL2, Ncurses, Notify</li>
-      <li><strong>Areas:</strong> Web Development, Algorithms, DevOps, Cybersecurity (academic exposure)</li>
-    </ul>
-  </section>
+  <div class="buttons">
+    <a href="#projects" class="btn primary">View Projects</a>
+    <a href="cv.pdf" class="btn secondary" download>Download CV</a>
+  </div>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>GLADOS</strong><br>
-        Designed a secure and user-friendly programming language to teach programming concepts
-        with clear syntax and built-in safety features.
-      </li>
-      <li>
-        <strong>R-TYPE</strong><br>
-        Developed a multiplayer arcade game with real-time client-server communication.
-      </li>
-      <li>
-        <strong>WHANOS</strong><br>
-        Built a CI/CD pipeline using Docker to ensure scalable and reliable deployments.
-      </li>
-    </ul>
-  </section>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a third-year Software Engineering student at EPITECH Benin, passionate about
+    software development, web technologies, and data-driven solutions.
+  </p>
+</section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <p>
-      <strong>Web Development Intern – Call Connect (2024)</strong><br>
-      Created and maintained websites using WordPress and Shopify.<br>
-      Assisted in troubleshooting front-end and back-end issues.
-    </p>
-  </section>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p>
-      <strong>Bachelor in Software Engineering (2023 – 2026)</strong><br>
-      EPITECH Benin, Cotonou
-    </p>
-  </section>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="images/glados.png" alt="GLADOS">
+      <h3>GLADOS</h3>
+      <p>Educational programming language with built-in safety features.</p>
+    </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:vanessa.bokove@epitech.eu">vanessa.bokove@epitech.eu</a></p>
-    <p>GitHub: <a href="https://github.com/22V07" target="_blank">github.com/22V07</a></p>
-  </section>
+    <div class="project-card">
+      <img src="images/rtype.png" alt="R-TYPE">
+      <h3>R-TYPE</h3>
+      <p>Multiplayer arcade game with real-time networking.</p>
+    </div>
 
-  <footer>
-    <p>© 2026 Vanessa Bokove | Portfolio</p>
-  </footer>
+    <div class="project-card">
+      <img src="images/whanos.png" alt="WHANOS">
+      <h3>WHANOS</h3>
+      <p>CI/CD pipeline using Docker for scalable deployments.</p>
+    </div>
+  </div>
+</section>
 
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <div><i class="fa-solid fa-code"></i> C / C++ / Haskell</div>
+    <div><i class="fa-solid fa-globe"></i> Web Development</div>
+    <div><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+    <div><i class="fa-solid fa-server"></i> DevOps Basics</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section">
+  <h2>Testimonials</h2>
+
+  <div class="testimonial">
+    <p>"Vanessa is highly motivated and adapts quickly to new technologies."</p>
+    <span>— Supervisor, Call Connect</span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:vanessa.bokove@epitech.eu">vanessa.bokove@epitech.eu</a></p>
+  <p>GitHub: <a href="https://github.com/22V07" target="_blank">github.com/22V07</a></p>
+</section>
+
+<footer>
+  © 2026 Vanessa Bokove
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+
 
